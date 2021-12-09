@@ -51,6 +51,11 @@ html {
     width: 20%;
 }
 
+.grid__col-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
 
 .grid__col-10 {
     padding-left: 5px;
@@ -172,6 +177,7 @@ html {
     background: var(--white-color);
     list-style: none;
     display: none;
+    z-index: 1;
 }
 
 .select-input__list::before {
@@ -194,4 +200,40 @@ html {
 
 .select-input__link:hover {
     color: var(--primary-color);
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.pagination__item {
+    list-style: none;
+    margin: 0 4px;
+}
+
+.pagination__item:hover a{
+    background-color: #e8e8e8;
+}
+
+.pagination__item--active a{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination__item--active:hover a{
+    background-color: #fd6431;
+}
+
+.pagination__item-link {
+    --heigth: 30px;
+    min-width: 40px;
+    height: var(--heigth);
+    display: block;
+    text-align: center;
+    line-height: var(--heigth);
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #939393;
+    border-radius: 2px;
 }
